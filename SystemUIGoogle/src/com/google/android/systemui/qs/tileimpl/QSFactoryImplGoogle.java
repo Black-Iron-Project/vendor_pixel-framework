@@ -44,10 +44,6 @@ import java.util.Map;
 
 @SysUISingleton
 public class QSFactoryImplGoogle extends QSFactoryImpl {
-    private final Provider<BatterySaverTileGoogle> mBatterySaverTileGoogleProvider;
-    private final Provider<ReverseChargingTile> mReverseChargingTileProvider;
-    private final Provider<DataSwitchTile> mDataSwitchTileProvider;
-    private final Provider<RefreshRateTile> mRefreshRateTileProvider;
 
     @Inject
     public QSFactoryImplGoogle(
@@ -56,5 +52,5 @@ public class QSFactoryImplGoogle extends QSFactoryImpl {
             Map<String, Provider<QSTileImpl<?>>> tileMap) {
         super(qsHostLazy,
                 customTileBuilderProvider, tileMap);
-    }
+   }
 }
